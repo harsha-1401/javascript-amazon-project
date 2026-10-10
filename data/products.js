@@ -656,5 +656,50 @@ const products = [
       "apparel",
       "mens"
     ]
+  },
+  {
+    id: "id1",
+    image: "images/products/fastrack watch 01.png",
+    name: "Fastrack Stunners Quartz Analog Stainless Steel Strap Watch",
+    rating: {
+      stars: 4.5,
+      count: 2132
+    },
+    priceRupees: 1886,
+    keywords: [
+      "watches",
+      "analog watches",
+      "accessories"
+    ]
+  },
+  {
+    id: "id2",
+    image: "images/products/truke-earbuds.png",
+    name: "Truke BTG Ultra with 60H Playtime, 360Spatial, Low Latency",
+    rating: {
+      stars: 4,
+      count: 37017
+    },
+    priceRupees: 699,
+    keywords: [
+      "wireless",
+      "bluetooth earbuds",
+      "earbuds"
+    ] 
+  },
+  {
+     id: "id3",
+    image: "images/products/smart-watch.png",
+    name: "boAt Chrome Eon Smartwatch (Active Black Strap, Free Size)",
+    rating: {
+      stars: 4.5,
+      count: 2910
+    },
+    priceRupees: 2999,
+    keywords: [
+      "smart watches",
+      "wearable smart devices",
+      "smart accessories"
+    ] 
   }
 ];
