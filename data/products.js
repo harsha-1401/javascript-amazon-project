@@ -7,7 +7,7 @@ export const products = [
       stars: 4.5,
       count: 87
     },
-    priceRupees: 829,
+    priceRupees:   829,
     keywords: [
       "socks",
       "sports",
