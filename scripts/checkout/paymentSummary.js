@@ -20,6 +20,12 @@ export function renderPaymentSummary() {
    const taxRupees = totalBeforeTaxRupees * 0.1;
    const totalRupees = totalBeforeTaxRupees + taxRupees;
 
+   let cartQuantity = 0;
+
+    cart.forEach((cartItem) => {
+      cartQuantity += cartItem.quantity;
+    });
+
    const paymentSummaryHTML = `
    
    
@@ -29,7 +35,7 @@ export function renderPaymentSummary() {
     </div>
 
     <div class="payment-summary-row">
-      <div>Items (3):</div>
+      <div>Items (${cartQuantity}):</div>
       <div class="payment-summary-money">
       ₹${formatCurrency(productPriceRupees)}
       </div>
@@ -52,14 +58,14 @@ export function renderPaymentSummary() {
     <div class="payment-summary-row">
       <div>Estimated tax (10%):</div>
       <div class="payment-summary-money">
-      ₹${formatCurrency(taxRupees)}
+      ₹${formatCurrency(taxRupees).toFixed(0)}
       </div>
     </div>
 
     <div class="payment-summary-row total-row">
       <div>Order total:</div>
       <div class="payment-summary-money">
-      ₹${formatCurrency(totalRupees)}
+      ₹${formatCurrency(totalRupees).toFixed(0)}
       </div>
     </div>
 
